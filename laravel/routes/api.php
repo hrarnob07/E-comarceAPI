@@ -25,6 +25,7 @@ Route::post('addCategory', 'API\DataController@addCategory')->middleware('cors')
 Route::get('getcategory', 'API\DataController@getcategory')->middleware('cors');
 Route::post('deleteCategory', 'API\DataController@delete')->middleware('cors');
 Route::get('/getCategoryById','API\DataController@categoryById')->middleware('cors');
+Route::post('/add-product','API\DataController@addProduct')->middleware('cors');
 
 
 //jwt

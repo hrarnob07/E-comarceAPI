@@ -83,6 +83,16 @@ class DataController extends Controller
             "success"=>true
         ]);
     }
+        public function addProduct(Request $request)
+            {
+                $data=$request->all();
+//            $data=$request->name;
+
+                return response()->json([
+                    'data'=>$data,
+                    "success"=>true
+                ]);
+            }
 
 
 
